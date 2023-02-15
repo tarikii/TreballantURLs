@@ -11,10 +11,9 @@ public class B {
             HttpURLConnection connection = (HttpURLConnection) documentForms.openConnection();
             connection.setDoOutput(true);
             connection.setRequestMethod("POST");
-            connection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
 
             try (OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream())) {
-                writer.write("entry.835030737=Sad night&entry.1616686619=Si");
+                writer.write("entry.835030737=Daniel por favor ten piedad&entry.1616686619=Si");
             }
 
             System.out.println("Resposta del codi: " + connection.getResponseCode());
